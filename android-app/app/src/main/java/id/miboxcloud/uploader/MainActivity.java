@@ -575,16 +575,16 @@ public class MainActivity extends Activity {
     }
 
     private Button button(String label) {
-        Button b = new Button(this); b.setText(label); b.setTextAllCaps(false); b.setTextColor(Color.WHITE); b.setTextSize(14);
+        Button b = new Button(this); b.setText(label); b.setAllCaps(false); b.setTextColor(Color.WHITE); b.setTextSize(14);
         b.setBackground(round(BLUE, 12, 0, Color.TRANSPARENT)); b.setMinHeight(dp(44)); b.setPadding(dp(10), 0, dp(10), 0);
         return b;
     }
     private Button smallButton(String label) {
-        Button b = new Button(this); b.setText(label); b.setTextAllCaps(false); b.setTextSize(12); b.setTextColor(BLUE);
+        Button b = new Button(this); b.setText(label); b.setAllCaps(false); b.setTextSize(12); b.setTextColor(BLUE);
         b.setPadding(dp(8), 0, dp(8), 0); b.setMinHeight(dp(38)); b.setBackground(round(Color.rgb(239, 246, 255), 10, 1, Color.rgb(191, 219, 254))); return b;
     }
     private Button ghostButton(String label) {
-        Button b = new Button(this); b.setText(label); b.setTextAllCaps(false); b.setTextSize(14); b.setTextColor(DARK); b.setBackground(round(Color.WHITE, 12, 1, BORDER)); return b;
+        Button b = new Button(this); b.setText(label); b.setAllCaps(false); b.setTextSize(14); b.setTextColor(DARK); b.setBackground(round(Color.WHITE, 12, 1, BORDER)); return b;
     }
     private GradientDrawable round(int color, int radiusDp, int borderWidthDp, int borderColor) {
         GradientDrawable d = new GradientDrawable(); d.setColor(color); d.setCornerRadius(dp(radiusDp));
