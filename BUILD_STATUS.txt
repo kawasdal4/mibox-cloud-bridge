@@ -1,0 +1,11 @@
+MiBox Cloud source package v0.1.1
+
+Server Termux: includes compatibility fix for rclone backend query returning JSON null for no matches.
+Server smoke-tested on the user's Mi Box with the actual gdrive remote: folder create/list verification PASS and small-file upload verification PASS.
+Android source project: not built into an APK in this package. Use Android Studio or the included GitHub Actions workflow to build a debug APK.
+
+Before production use:
+- Build APK in Android Studio (SDK Platform 35) or GitHub Actions.
+- Test Tailscale + actual gdrive remote on the target devices.
+- Do not enable optional Termux:Boot launcher until manual tests succeed.
+- Installer does not touch the Tapo CCTV agent or its state.json.

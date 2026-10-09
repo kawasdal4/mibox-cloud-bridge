@@ -1,0 +1,21 @@
+**/build/
+.gradle/
+*.apk
+*.aab
+local.properties
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+**/settings.json
+**/rclone.conf
+**/authorized_keys
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.jks
+**/*.keystore
+**/*token*.txt
+**/*token*.json
